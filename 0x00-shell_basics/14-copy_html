@@ -1,3 +1,2 @@
 #!/bin/bash
-parent_dir=$(dirname "$(pwd)")
-find . -name "*.html" -type f -newer "$parent_dir" -exec cp -u {} "$parent_dir" \;
+parent_dir=$(dirname "$(pwd)"); find . -name "*.html" -type f -newer "$parent_dir" -exec cp -u {} "$parent_dir" \;
