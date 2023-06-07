@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -pd * | tr '\n' ',' | sed 's/,$/\n/'
+ls -a | grep -v '^\.|^..' | tr '\n' ','
